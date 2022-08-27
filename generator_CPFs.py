@@ -9,8 +9,7 @@ def formatting_CPF(a):
     a.insert(11, '-')
     return ''.join(a)
 while True:
-    cpf = str(randint(10000000000,
-    12345678911))
+    cpf = str(randint(10000000000,12345678911))
     new_cpf = cpf[:9]
 
     mult = 10
@@ -36,6 +35,7 @@ while True:
         break
 
 
+sequencia  = new_cpf == str(new_cpf[0]) * 11
 
 if cpf == new_cpf:
         print(f'{formatting_CPF(cpf)} e um CPF valido')
@@ -46,3 +46,4 @@ print('-=-'* 20)
 print("TEMPORARY CPF USE WITH MODERATION")
 print('SEE YOU NEXT TIME')
 
+#-----------------------------------------------------------------------------------------------
